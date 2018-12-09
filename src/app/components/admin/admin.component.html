@@ -1,0 +1,52 @@
+<div class="container">
+  <table align="center" class="table table-bordered table-inverse">
+    <tr>
+      <th>Employee ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone Number</th>
+      <th>Hire Date</th>
+      <th>Job ID</th>
+      <th>Salary</th>
+      <th>Commission Percentage</th>
+      <th>Manager ID</th>
+      <th>Manager First Name</th>
+      <th>Department ID</th>
+    </tr>
+    <tr *ngFor="let employee of employees">
+      <td>
+        {{employee.id}}
+      </td>
+      <td>
+        {{employee.firstName}} {{employee.lastName}}
+      </td>
+      <td>
+        {{employee.email}}
+      </td>
+      <td>
+        {{employee.phoneNumber}}
+      </td>
+      <td>
+        {{employee.hireDate}}
+      </td>
+      <td>
+        {{employee.jobId}}
+      </td>
+      <td class="text-right">
+        {{employee.salary}}
+      </td>
+      <td class="text-right">
+        {{employee.commissionPct}}%
+      </td>
+      <td class="text-right">
+        {{employee.managerId}}
+      </td>
+      <td>
+        {{employee.managerName}}
+      </td>
+      <td class="text-right">
+        {{employee.departmentId}}
+      </td>
+    </tr>
+  </table>
+</div>

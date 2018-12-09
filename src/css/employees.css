@@ -1,0 +1,16 @@
+html {
+  height: 100%;
+}
+
+body {
+
+  background: linear-gradient(150deg,#D5E3F1 15%,#FFFBD9 70%,#FFDFCB 94%);
+}
+
+h1 {
+  font-size: 2.0em;
+}
+
+.table-bordered, .table-bordered td, .table-bordered th {
+  border: 3px solid #2F465D;
+}
